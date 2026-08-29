@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LabRef — Know what your numbers mean</title>
+  <meta name="description" content="LabRef quickly shows lab test reference ranges and plain-language interpretation so you can read lab reports with confidence.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2C5D58">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" role="banner" id="top">
+    <a href="#top" class="logo">LabRef <span class="tag">Beta</span></a>
+    <div class="profile-wrap">
+      <button class="profile-btn" id="profileBtn" aria-label="Account menu" aria-haspopup="true" aria-expanded="false" aria-controls="profileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M4 20c0-3.5 3.5-6 8-6s8 2.5 8 6"/>
+          <circle cx="12" cy="8" r="3.6"/>
+        </svg>
+      </button>
+
+      <div class="profile-menu" id="profileMenu" role="menu" aria-labelledby="profileBtn">
+        <button type="button" class="profile-menu-btn" role="menuitem" id="getAppBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          Get the app
+        </button>
+
+        <a href="privacy.html" role="menuitem" class="profile-menu-btn" id="privacyLink">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+          Privacy policy
+        </a>
+
+        <div class="divider" role="separator" aria-hidden="true"></div>
+
+        <button type="button" class="profile-menu-btn" role="menuitem" id="rateBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+          Rate us
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero" id="main" role="main" aria-labelledby="hero-heading">
+    <div>
+      <p class="eyebrow">Reference ranges, in plain language</p>
+      <h1 id="hero-heading">Know what your <em>numbers</em> actually mean.</h1>
+      <p class="sub">LabRef looks up any lab test, shows you the normal reference range, and tells you plainly whether a result is low, normal, or high — built for lab science students and anyone holding a test report.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" id="primaryNotifyBtn">Get the app — Coming soon</button>
+        <a href="privacy.html" class="btn-ghost">Read the privacy policy</a>
+      </div>
+    </div>
+
+    <div class="range-card" aria-labelledby="test-name" role="region">
+      <div class="label-row">
+        <span class="test-name" id="test-name">HEMOGLOBIN (Hb)</span>
+        <span class="test-unit">g/dL</span>
+      </div>
+      <div class="test-value">13.5</div>
+      <div class="range-track" aria-hidden="true"><div class="range-marker" aria-hidden="true"></div></div>
+      <div class="range-scale" aria-hidden="true"><span>Low</span><span>Normal range</span><span>High</span></div>
+      <div class="range-verdict" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span>WITHIN NORMAL RANGE</span>
+        <small>12.0 – 15.5 g/dL, adult female</small>
+      </div>
+    </div>
+  </main>
+
+  <section class="section" aria-labelledby="what-labref">
+    <div class="section-head">
+      <p class="eyebrow">What LabRef does</p>
+      <h2 id="what-labref">Everything you need to read a lab report with confidence.</h2>
+      <p>No jargon, no guesswork — just the reference range, the verdict, and what it means for you.</p>
+    </div>
+    <div class="panel-grid" role="list">
+      <div class="panel" role="listitem">
+        <span class="code">01 · SEARCH</span>
+        <h3>Look up any test instantly</h3>
+        <p>Type a test name — CBC, LFT, lipid profile, thyroid panel — and get its reference range in seconds.</p>
+      </div>
+      <div class="panel" role="listitem">
+        <span class="code">02 · INTERPRET</span>
+        <h3>See Low, Normal, or High at a glance</h3>
+        <p>Enter your result and LabRef places it on the range so you know exactly where it falls.</p>
+      </div>
+      <div class="panel" role="listitem">
+        <span class="code">03 · UNDERSTAND</span>
+        <h3>Plain-language explanations</h3>
+        <p>Every value comes with a short, clear note on what it measures and why it matters — no medical degree required.</p>
+      </div>
+      <div class="panel" role="listitem">
+        <span class="code">04 · TRACK</span>
+        <h3>Save reports to your account</h3>
+        <p>Sign in to keep a private history of your results and see how your values change over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;" aria-labelledby="audience">
+    <div class="audience" role="list">
+      <div class="cell" role="listitem">
+        <p class="eyebrow">For students</p>
+        <h3>Built on the bench, not just the textbook</h3>
+        <p>A fast reference for MLT and allied-health students during labs, clinicals, and exam revision — the ranges you look up most, in one place.</p>
+      </div>
+      <div class="cell alt" role="listitem">
+        <p class="eyebrow">For everyone else</p>
+        <h3>Your report, explained simply</h3>
+        <p>Got a test result and don't know if it's fine? Search the value, see the range, understand the result — for informational reference only, not a diagnosis.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner" role="region" aria-labelledby="coming-soon">
+    <p class="eyebrow">LabRef</p>
+    <h2 id="coming-soon">Coming soon.</h2>
+    <p>We're finishing testing before LabRef opens to everyone on the Google Play Store. Check back soon.</p>
+    <button class="btn-primary" id="notifyBtn">Notify me at launch</button>
+  </div>
+
+  <footer>
+    <span>© 2026 LabRef. For informational reference only — not a substitute for professional medical advice.</span>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script>
+    // Profile menu behavior with keyboard support and focus management
+    const profileBtn = document.getElementById('profileBtn');
+    const profileMenu = document.getElementById('profileMenu');
+    const menuItems = Array.from(profileMenu.querySelectorAll('[role="menuitem"]'));
+    const getAppBtn = document.getElementById('getAppBtn');
+    const rateBtn = document.getElementById('rateBtn');
+    const primaryNotifyBtn = document.getElementById('primaryNotifyBtn');
+    const notifyBtn = document.getElementById('notifyBtn');
+    const toastEl = document.getElementById('toast');
+
+    let toastTimer;
+
+    function showToast(msg){
+      toastEl.textContent = msg;
+      toastEl.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(()=>toastEl.classList.remove('show'), 2600);
+    }
+
+    function openMenu(){
+      profileMenu.classList.add('open');
+      profileBtn.setAttribute('aria-expanded', 'true');
+      setTimeout(()=> menuItems[0]?.focus(), 0);
+    }
+
+    function closeMenu(){
+      profileMenu.classList.remove('open');
+      profileBtn.setAttribute('aria-expanded', 'false');
+      profileBtn.focus();
+    }
+
+    profileBtn.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      profileMenu.classList.contains('open') ? closeMenu() : openMenu();
+    });
+
+    profileMenu.addEventListener('click', (e)=> e.stopPropagation());
+
+    document.addEventListener('click', ()=> {
+      if (profileMenu.classList.contains('open')) closeMenu();
+    });
+
+    document.addEventListener('keydown', (e)=>{
+      if (!profileMenu.classList.contains('open')) {
+        if (document.activeElement === profileBtn && (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ')) {
+          e.preventDefault();
+          openMenu();
+        }
+        return;
+      }
+      const currentIndex = menuItems.indexOf(document.activeElement);
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        closeMenu();
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const next = menuItems[(currentIndex + 1) % menuItems.length];
+        next.focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prev = menuItems[(currentIndex - 1 + menuItems.length) % menuItems.length];
+        prev.focus();
+      } else if (e.key === 'Tab') {
+        setTimeout(()=> {
+          if (!profileMenu.contains(document.activeElement)) closeMenu();
+        }, 0);
+      }
+    });
+
+    getAppBtn.addEventListener('click', ()=> showToast("LabRef isn't on the Play Store yet — coming soon."));
+    rateBtn.addEventListener('click', ()=> showToast("Rating opens once LabRef is live on the Play Store."));
+    primaryNotifyBtn.addEventListener('click', ()=> showToast("LabRef isn't on the Play Store yet — coming soon."));
+    notifyBtn.addEventListener('click', ()=> showToast("LabRef isn't on the Play Store yet — coming soon."));
+
+    profileMenu.addEventListener('mouseleave', ()=> {
+      if (!profileMenu.contains(document.activeElement)) closeMenu();
+    });
+  </script>
+</body>
+</html>
