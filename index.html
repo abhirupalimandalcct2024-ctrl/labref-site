@@ -268,7 +268,6 @@
     letter-spacing:0.02em;
   }
   footer a{text-decoration:none; border-bottom:1px solid var(--line); padding-bottom:1px;}
-
   /* toast */
   .toast{
     position:fixed; bottom:28px; left:50%; transform:translateX(-50%) translateY(20px);
@@ -453,8 +452,8 @@
     verdict.classList.remove('status-high','status-low');
     if(s.status === 'high') verdict.classList.add('status-high');
     if(s.status === 'low') verdict.classList.add('status-low');
-    [...rcD
-}
+    [...rcDotsWrap.children].forEach((d, idx)=> d.classList.toggle('active', idx===i));
+  }
 
   function setRcSlide(i){
     rcIndex = (i + rcSlides.length) % rcSlides.length;
